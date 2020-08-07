@@ -8,4 +8,5 @@ configure({ adapter: new Adapter() });
 test(`Should contain the title 'Hello, World'`, () => {
   const wrapper = shallow(<App />);
   expect(wrapper.find('#title').text()).toBe('Hello, World');
+  expect(wrapper.find('#testing').text()).toBe('testing');
 });
